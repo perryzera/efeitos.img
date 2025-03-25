@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Imagem</title>
+    <link rel="stylesheet" href="style.css"> <!-- Incluindo o arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Upload de Imagem</h1>
+        <label class="upload-container">
+            Clique para selecionar uma imagem
+            <input type="file" id="fileInput" accept="image/png, image/jpeg, image/jpg, image/gif" hidden>
+        </label>
+        <br>
+        <canvas id="canvas"></canvas>
+        <div class="buttons">
+            <button onclick="applyBlur()">Aplicar Blur</button>
+            <button onclick="applySharpen()">Aplicar Sharpening</button>
+            <button onclick="rotateImage()">Rotacionar 45°</button>
+            <button onclick="resetImage()">Resetar Filtros</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
